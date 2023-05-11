@@ -38,7 +38,7 @@ app.get("/:customListName", async function (req, res) {
   if (!foundList) {
     const list = new List({
       name: customListName,
-      items: defaultItems,
+      items: defaultItems
     });
     await list.save();
     res.redirect("/" + customListName);
