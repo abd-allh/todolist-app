@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const { Item, List, defaultItems } = require("./Model");
 
 require('dotenv').config({path : 'vars/.env'});
-const MUSER = process.env.USER
-const MPASS = process.env.PASS
+const MUSER = process.env.USER;
+const MPASS = process.env.PASS;
 
 const app = express();
 const port = process.env.PORT || 3000;
